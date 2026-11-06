@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 const navigation = [
   {
     name: "Dashboard",
-    href: "/",
+    href: "/dashboard",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -27,7 +27,7 @@ const navigation = [
   },
   {
     name: "Screens",
-    href: "/screens",
+    href: "/dashboard/screens",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -46,7 +46,7 @@ const navigation = [
   },
   {
     name: "Media",
-    href: "/media",
+    href: "/dashboard/media",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -66,7 +66,7 @@ const navigation = [
   },
   {
     name: "Playlists",
-    href: "/playlists",
+    href: "/dashboard/playlists",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -85,7 +85,7 @@ const navigation = [
   },
   {
     name: "Settings",
-    href: "/settings",
+    href: "/dashboard/settings",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -126,8 +126,8 @@ export default function DashboardLayout({
         <nav className="flex flex-1 flex-col gap-1 p-4">
           {navigation.map((item) => {
             const active =
-              item.href === "/"
-                ? pathname === "/"
+              item.href === "/dashboard"
+                ? pathname === "/dashboard"
                 : pathname.startsWith(item.href);
 
             return (

@@ -293,7 +293,7 @@ export default function HomePage() {
             </span>
           </div>
           <p className="text-xs text-footer">
-            © {new Date().getFullYear()} CrystaGrid. All rights reserved.
+            © 2026 CrystaGrid. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-xs text-footer">
             <a href="#" className="transition-colors hover:text-text">
